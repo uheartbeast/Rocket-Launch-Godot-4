@@ -1,4 +1,6 @@
 extends Node2D
 
+@onready var animation_player = $AnimationPlayer
+
 func _ready():
-	print("Hello World")
+	animation_player.play("launch")
